@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Phone, MessageCircle, ArrowUp } from 'lucide-react';
+import { Phone, ArrowUp } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 import { COMPANY_INFO } from '../data/company';
 
 export function FloatingActions() {
@@ -43,7 +44,7 @@ export function FloatingActions() {
           title="Chat on WhatsApp"
           className="relative w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-white shadow-lg flex items-center justify-center transition-transform hover:scale-105"
         >
-          <MessageCircle className="w-6 h-6" />
+          <WhatsAppIcon className="w-6 h-6" />
         </a>
       </div>
     </div>

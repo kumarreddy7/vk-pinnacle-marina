@@ -9,10 +9,10 @@ import {
   ShieldCheck,
   Navigation,
   CalendarCheck,
-  MessageCircle,
   Maximize2,
   Calculator,
 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { PROJECTS } from '../data/projects';
 import { COMPANY_INFO } from '../data/company';
 import { Lightbox } from '../components/Lightbox';
@@ -452,7 +452,7 @@ export function ProjectDetailsPage() {
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   <span>WhatsApp Sales Team</span>
                 </a>
               </form>

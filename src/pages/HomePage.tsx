@@ -16,7 +16,6 @@ import {
   Users,
   FileText,
   Star,
-  MessageCircle,
   Phone,
   Compass,
   Home,
@@ -34,6 +33,7 @@ import { Lightbox } from '../components/Lightbox';
 import { Reveal } from '../components/Reveal';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { useEnquiry } from '../context/EnquiryContext';
+import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const WHY_CHOOSE_ITEMS = [
@@ -623,7 +623,7 @@ export function HomePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-semibold text-sm px-6 py-3.5 rounded-lg hover:-translate-y-0.5 transition-all"
             >
-              <MessageCircle className="w-4 h-4" />
+              <WhatsAppIcon className="w-4 h-4" />
               <span>WhatsApp Us</span>
             </a>
             <button

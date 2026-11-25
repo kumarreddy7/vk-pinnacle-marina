@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle, CalendarCheck, Mail } from 'lucide-react';
+import { Menu, X, Phone, CalendarCheck, Mail } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { COMPANY_INFO } from '../data/company';
 import { useEnquiry } from '../context/EnquiryContext';
@@ -50,7 +51,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-[#1E6B52] hover:bg-[#258062] text-white px-2.5 py-0.5 rounded-full font-medium transition-colors"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsAppIcon className="w-3.5 h-3.5" />
               <span>WhatsApp Us</span>
             </a>
           </div>
@@ -211,7 +212,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-1.5 bg-[#1E6B52] text-white text-sm font-semibold py-2.5 rounded-lg"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   <span>WhatsApp</span>
                 </a>
               </div>
